@@ -1,0 +1,158 @@
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 23px auto;
+  /* background: rgb(231, 228, 213); */
+  align-items: center;
+}
+.about-title{
+  color: rgb(222, 160, 87);
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+      40deg,
+      rgb(32, 32, 32) 0%,
+      rgb(222, 160, 84) 80%
+    )
+    text;
+    font-family: "Lora", serif;
+}
+
+
+.about-image-area {
+  position: relative;
+  background: var(--dark--bg);
+  padding-bottom: 75px;
+  border-radius: 30px 30px 500px 500px;
+  width: 100%;
+  max-width: 545px;
+  height: 650px;
+}
+
+.about-image-area span.years {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color3);
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: var(--primary-color3);
+  font-family: var(--font-lora);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+.about-image-area .abt-img-text1 {
+  position: absolute;
+  bottom: 25px;
+  left: 5px;
+  width: 245px;
+}
+
+.about-image-area .abt-img-text2 {
+  position: absolute;
+  bottom: -19px;
+  right: 31px;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .about-image-area {
+    display: block;
+    width: 100%;
+    height: 655px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-image-area {
+    width: 100%;
+    height: 600px;
+    /* border-radius: 20px; */
+
+    border-radius: 30px 30px 400px 400px;
+  }
+
+  .about-image-area span.years {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    bottom: 10px;
+  }
+
+  .about-image-area .abt-img-text1 {
+    position: absolute;
+    bottom: 40px;
+    left: 8px;
+    width: 190px;
+  }
+  .about-image-area .abt-img-text2 {
+    position: absolute;
+    bottom: 3px;
+    right: 37px;
+    width: 150px;
+  }
+}
+/* --------------------
+   Marquee
+--------------------- */
+.marquee {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.marquee span {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+.marquee span {
+  font-size: 60px;
+  font-weight: 700;
+  opacity: 0.2;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* --------------------
+   Responsive Marquee
+--------------------- */
+
+/* Tablets */
+@media (max-width: 991px) {
+  .marquee span {
+    font-size: 40px;
+    margin-right: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .marquee {
+    height: 25px;
+  }
+
+  .marquee span {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+}

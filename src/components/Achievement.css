@@ -1,0 +1,106 @@
+/* ================================
+   IntroSection - Custom Styles
+================================ */
+
+/* Section background & spacing */
+.intro-section {
+  background: linear-gradient(135deg, #33220f, #2a2a2a);
+  padding: 4rem 1rem;
+}
+
+.intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card style */
+.intro-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.intro-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+ background: linear-gradient(135deg, rgba(17, 15, 12, 0.8) , rgba(42, 42, 42, 0.8) );
+}
+
+/* Background faint numbers (01, 02…) */
+.intro-card .bg-number {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d1d5db; /* gray-300 */
+  opacity: 0.6;
+  user-select: none;
+}
+
+/* Icon */
+.intro-card img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+/* CountUp number */
+.intro-card h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ea580c; /* orange-600 */
+  font-family:"Lora", serif;
+  margin-bottom: 0.5rem;
+}
+
+/* Label */
+.intro-card h5 {
+  font-size: 1.2rem;
+  color: #ea580c; /* gray-700 */
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   Responsive Design
+================================ */
+@media (max-width: 1024px) {
+  .intro-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .intro-section {
+    padding: 3rem 1rem;
+  }
+  .intro-card h3 {
+    font-size: 1.5rem;
+  }
+  .intro-card h5 {
+    font-size: 0.9rem;
+  }
+}

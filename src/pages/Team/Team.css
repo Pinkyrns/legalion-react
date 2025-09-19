@@ -1,0 +1,21 @@
+.team-section-title {
+  
+  width: 65%;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(222, 160, 87);
+  margin-top: -7px;
+  display: inline-block;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(
+      40deg,
+      rgb(32, 32, 32) 0%,
+      rgb(222, 160, 84) 80%
+    )
+    text;
+    font-family: "Lora", serif;
+}
+
+
